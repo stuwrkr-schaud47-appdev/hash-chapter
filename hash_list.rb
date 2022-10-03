@@ -14,3 +14,10 @@ list_of_people = [
   { :name => "Carl", :age => 9 },
 ]
 
+
+list_of_people.each_with_index do |hash,index|
+  arr_age = hash[:age]
+  if(arr_age >=16)
+    p hash[:name]
+  end  
+end  
